@@ -1,0 +1,101 @@
+<div class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card-body">
+        <button
+          class="btn btn-fill btn-danger"
+          (click)="ShowAddBankPopUp(content)"
+          type="submit"
+        >
+          Add Bank
+        </button>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Banks</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table tablesorter" id="">
+              <thead class="text-primary">
+                <tr>
+                  <th>Bank Name</th>
+                  <th>Account Number</th>
+                  <th>Balance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dakota Rice</td>
+                  <td>Niger</td>
+                  <td class="text-center">$36,738</td>
+                </tr>
+                <tr>
+                  <td>Minerva Hooper</td>
+                  <td>CuraÃ§ao</td>
+                  <td class="text-center">$23,789</td>
+                </tr>
+                <tr>
+                  <td>Sage Rodriguez</td>
+                  <td>Netherlands</td>
+                  <td class="text-center">$56,142</td>
+                </tr>
+                <tr>
+                  <td>Philip Chaney</td>
+                  <td>Korea, South</td>
+                  <td class="text-center">$38,735</td>
+                </tr>
+                <tr>
+                  <td>Doris Greene</td>
+                  <td>Malawi</td>
+                  <td class="text-center">$63,542</td>
+                </tr>
+                <tr>
+                  <td>Mason Porter</td>
+                  <td>Chile</td>
+                  <td class="text-center">$78,615</td>
+                </tr>
+                <tr>
+                  <td>Jon Porter</td>
+                  <td>Portugal</td>
+                  <td class="text-center">$98,615</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header" style="background-color: #1e1e2f; color: white;">
+    <h4 class="modal-title" id="modal-basic-title" style="color: white;">
+      Bootstrap Modal
+    </h4>
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div
+    class="modal-body style="
+    style="background-color: #27293d; color: white;"
+  >
+    Here I am!
+  </div>
+  <div class="modal-footer" style="background-color: #1e1e2f; color: white;">
+    <button
+      type="button"
+      class="btn btn-outline-dark"
+      (click)="modal.close('Save click')"
+    >
+      Ok
+    </button>
+  </div>
+</ng-template>

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "future-money-df820"
+  },
+  "targets": {
+    "future-money-df820": {
+      "hosting": {
+        "black-dashboard-angular": [
+          "future-money-df820"
+        ]
+      }
+    }
+  }
+}
